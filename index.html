@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mara Cantinho da Beleza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<header class="navbar-fixa">
+    <nav class="menu-navegacao">
+        <a href="#inicio">Início</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#botao-menu" onclick="toggleAgenda()">Agendamentos</a>
+        <a href="#localizacao">Localização</a>
+    </nav>
+</header>
+
+
+<header>
+        <img src="./logo.png" class="logo" id="inicio">
+        <h1>Mara Cantinho da Beleza</h1>
+    </header>
+    
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div id="container-servicos" class="container-cards"></div>
+    </section>
+    
+    <nav>
+        <button onclick="toggleAgenda()" class="botao-menu" id="botao-menu">Ver Serviços Agendados</button>
+    </nav>
+    
+    <section id="agenda-publica" class="oculta">
+        <h2>Serviços Agendados</h2>
+        <ul id="lista-agendamentos"></ul>
+        <button onclick="toggleAgenda()" class="botao-fechar">Fechar</button>
+    </section>
+    
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="container-galeria">
+            <img src="progressiva2.png" alt="Serviço 1">
+        </div>
+    </section>
+    
+    <section class="profissionais">
+        <h2>Nossas Profissionais</h2>
+        <p>Dona: <span>Cleomar Balduino de Paula</span></p>
+        <div class="cargo">
+            <div class="guria">
+                <img src="vitoria.png" class="vitoria">
+                <p>Cabelereira: <span>Vitória</span></p>
+            </div>
+            
+            <div class="guria">
+                <img src="nicole.png" class="nicole">
+                <p>Manicure: <span>Nicole</span></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="horarios">
+        <h2>Horário de Funcionamento</h2>
+        <p>Terça a Sábado: 08:00 às 12:00 | 13:30 às 18:00</p>
+        <p>Domingo e Segunda: Fechado!</p>
+    </section>
+    
+    <section id="localizacao">
+        <h2>Nosso Endereço</h2>
+        <p>Rua 9 de julho, 333 - Nova Brasília, Imbituba/SC</p>
+        
+        <a href="https://www.google.com/maps/dir/?api=1&destination=-28.213882,-48.703055" target="_blank" class="botao-mapa">
+            📍 Como chegar (Abrir no GPS)
+        </a>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Mara Cantinho da Beleza. Todos os direitos reservados.</p>
+            <p>Desenvolvido por: Djonata Alexandre Borba | Desenvolvedor Web</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/maracantinhodabeleza?igsh=ZzljYmc1NmI2MDFk">Instagram</a> | <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

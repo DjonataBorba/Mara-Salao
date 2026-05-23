@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mara Cantinho da Beleza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./logo.png" class="logo">
+        <h1>Mara Cantinho da Beleza</h1>
+    </header>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div id="container-servicos" class="container-cards"></div>
+    </section>
+    
+    <section id="galeria">
+    <h2>Nosso Trabalho</h2>
+    <div class="container-galeria">
+        <img src="foto1.jpg" alt="Serviço 1">
+    </div>
+</section>
+  
+  <section class="profissionais">
+    <h2>Nossas Profissionais</h2>
+    <p>Dona: <span>Cleomar Balduino de Paula</span></p>
+    <div class="cargo">
+      <img src:"">
+      <p>Cabelereira: <span>Vitória</span></p>
+      <p>Manicure: <span>Nicole</span></p>
+    </div>
+  </section>
+
+
+    <section id="horarios">
+        <h2>Horário de Funcionamento</h2>
+        <p>Terça a Sábado: 08:00 às 12:00 | 13:30 às 18:00</p>
+    </section>
+
+    <section id="localizacao">
+    <h2>Nosso Endereço</h2>
+    <p>Rua 9 de julho, 333 - Nova Brasília, Imbituba/SC</p>
+    
+    <a href="https://www.google.com/maps/dir/?api=1&destination=-28.213882,-48.703055" 
+       target="_blank" 
+       class="botao-mapa">
+       📍 Como chegar (Abrir no GPS)
+    </a>
+</section>
+
+

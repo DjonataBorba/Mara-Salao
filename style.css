@@ -1,0 +1,275 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf0f0;
+  color: #5a4a4a;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  background-color: #f8c8c8;
+  color: white;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preco {
+  display: block;
+  font-weight: bold;
+  color: #d63384;
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #f8c8c8;
+  border-radius: 5px;
+}
+
+button {
+  background: #f8c8c8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+button:hover {
+  background: #d63384;
+}
+
+#horarios,
+#localizacao {
+  padding: 20px;
+  margin-top: 20px;
+  background: #fff;
+}
+
+.logo{
+  width: 230px;
+}
+
+.botao-mapa {
+    display: inline-block;
+    background-color: #d63384;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.botao-mapa:hover {
+    transform: scale(1.05);
+    background-color: #b52a6e;
+}
+
+#galeria { padding: 40px 20px; }
+
+.container-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.container-galeria img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    cursor: pointer;
+}
+
+.profissionais {
+  padding: 20px;
+  margin-top: 20px;
+  background: #fff;
+}
+
+.cargo {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+span {
+  color: #d63384;
+}
+
+footer {
+    background-color: #f8c8c8;
+    color: #fff;
+    padding: 30px 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+.vitoria{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.nicole{
+  width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+.guria{
+  display: flex;
+  text-align: center;
+  flex-direction:column;
+}
+
+.disponivel{
+  margin-top: 15px;
+  font-size: 10px;
+}
+
+.oculta {
+  display: none;
+  /* Esconde o elemento */
+}
+
+.botao-menu {
+  background: #5a4a4a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 190px;
+}
+
+.botao-fechar {
+  background: #d63384;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 190px;
+}
+
+.botao-excluir {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 0.8em;
+  width: 100px;
+}
+
+.botao-excluir:hover {
+  background-color: #cc0000;
+}
+
+#lista-agendamentos li {
+  display: flex;
+  justify-content: space-between;
+  /* Mantém o texto à esquerda e o botão à direita */
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #d63384;
+  font-weight: bold;
+}
+
+.navbar-fixa {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Garante que o menu fique sempre acima de tudo */
+    background: rgba(255, 255, 255, 0.9); /* Translucidez elegante */
+    backdrop-filter: blur(10px); /* Efeito "vidro fosco" */
+    border-bottom: 1px solid #f8c8c8;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: #5a4a4a; /* Tom mais sóbrio */
+    font-weight: 500;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: #d63384;
+}
+
+/* Responsividade: Fica perfeito no celular */
+@media (max-width: 600px) {
+    .menu-navegacao {
+        gap: 15px;
+    }
+    .menu-navegacao a {
+        font-size: 0.8em;
+    }
+}
